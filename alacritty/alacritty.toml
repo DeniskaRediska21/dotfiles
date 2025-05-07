@@ -22,4 +22,4 @@ size = 14
 
 [terminal.shell]
 program = "/usr/bin/bash"
-# args = ["-c", "tmux -u attach || tmux -u new -s init"]
+args = ["-c", "tmux -u attach || tmux -u new -s init"]
