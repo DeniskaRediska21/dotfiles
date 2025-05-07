@@ -34,3 +34,4 @@ lf () {
 	unset LF_TEMPDIR
 }
 
+source ~/.config/.git-completion.bash 
