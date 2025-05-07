@@ -2,7 +2,7 @@
     selected-normal-foreground:  var(lightfg);
     foreground:                  rgba ( 196, 202, 212, 100 % );
     normal-foreground:           var(foreground);
-    alternate-normal-background: rgba ( 42, 42, 42, 100 % );
+    alternate-normal-background: rgba ( 39, 41, 44, 100 % );
     red:                         rgba ( 194, 65, 65, 100 % );
     selected-urgent-foreground:  var(lightfg);
     blue:                        rgba ( 43, 131, 166, 100 % );
@@ -12,7 +12,7 @@
     lightbg:                     var(foreground);
     selected-active-foreground:  var(lightfg);
     alternate-active-background: var(blue);
-    background:                  rgba ( 33, 33, 33, 100 % );
+    background:                  rgba ( 33, 35, 37, 100 % );
     alternate-normal-foreground: var(foreground);
     normal-background:           var(background);
     lightfg:                     rgba ( 249, 249, 249, 100 % );
