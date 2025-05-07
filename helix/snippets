@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ "$1" = "c" ]
+then
+  echo [sub for sub in iter]
+fi
+
+if [ "$1" = "f" ]
+then
+  echo "def function():"
+fi
+
+if [ "$1" = "z" ]
+then
+  echo "zip(a,b)"
+fi
+
+if [ "$1" = "l" ]
+then
+  echo "for sub in iter:"
+fi
+
+if [ "$1" = "e" ]
+then
+  echo "for index, sub in enumerate(iter):"
+fi
+
+if [ "$1" = "m" ]
+then
+  echo "if __name__ == '__main__':"
+fi

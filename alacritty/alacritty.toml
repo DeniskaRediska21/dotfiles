@@ -1,0 +1,25 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
+]
+
+
+[window]
+# decorations = "None"
+dimensions = { columns = 100 , lines = 25 }
+padding = { x = 3, y = 3 }
+dynamic_padding = true
+startup_mode = "maximized"
+# opacity = 0.85
+
+[font]
+# normal = { family = "ComicShannsMonoNerdFont", style = "Regular" }
+# bold = { family = "ComicShannsMonoNerdFont", style = "Bold" }
+# italic = { family = "ComicShannsMonoNerdFont", style = "Italic" }
+size = 14
+
+[terminal]
+
+[terminal.shell]
+program = "/usr/bin/bash"
+# args = ["-c", "tmux -u attach || tmux -u new -s init"]

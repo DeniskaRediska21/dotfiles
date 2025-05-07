@@ -1,0 +1,78 @@
+
+theme = "molokai"
+
+[editor]
+line-number = "relative"
+rulers = [120]
+bufferline = "always"
+cursorline = true
+color-modes = true
+
+[keys.normal]
+esc = ["collapse_selection"]
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+C-t = [":new", ":insert-output git log --graph --pretty=oneline --abbrev-commit", "collapse_selection"]
+
+C-o = [":new", ":insert-output lf -print-selection", "select_all", "split_selection_on_newline", "goto_file", "goto_last_modified_file",  ":buffer-close!", ":redraw"]
+
+C-q = ":buffer-close!"
+C-n = ":new"
+tab = ":buffer-next"
+S-tab = ":buffer-previous"
+
+C-7 = "toggle_comments"
+"C-/" = "toggle_comments"
+
+X = "extend_line_above" # Shift+x to select the whole line above
+D = [ "extend_to_line_end", "change_selection"] # Wipe and edit the current line from cursor position
+
+
+j = "move_char_left"
+l = "move_visual_line_up"
+k = "move_visual_line_down"
+"backspace" = "move_char_right"
+
+[keys.normal.t]
+m = ":insert-output bash /home/user/.config/helix/snippets m"
+c = ":insert-output bash /home/user/.config/helix/snippets c"
+z = ":insert-output bash /home/user/.config/helix/snippets z"
+l = ":insert-output bash /home/user/.config/helix/snippets l"
+e = ":insert-output bash /home/user/.config/helix/snippets e"
+
+[keys.select]
+j = "extend_char_left"
+k = "extend_visual_line_down"
+l = "extend_visual_line_up"
+"backspace" = "extend_char_right"
+
+[editor.soft-wrap]
+enable = true
+# wrap-at-text-width = true
+wrap-indicator = "↩ "
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+
+[editor.statusline]
+right = [ "position", "position-percentage", "total-line-numbers" ]
+left = [ "mode", "spinner", "diagnostics" ]
+center = [ "file-name", "separator", "version-control", "separator" ]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# black popup
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.file-picker]
+hidden = false

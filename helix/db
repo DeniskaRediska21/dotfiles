@@ -1,0 +1,12 @@
+
+#!/bin/bash
+initial_wd=`pwd`
+
+if [ -n "$*" ]; then 
+	touch .db 
+	echo -e "#!/bin/bash\n" > .db
+	echo "$*" >> .db
+	chmod +x .db 
+fi
+
+bash .db
