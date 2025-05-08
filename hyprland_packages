@@ -15,7 +15,7 @@ hyprshot
 less
 lf
 ly
-networkmanager
+etworkmanager
 networkmanager-openvpn
 nm-connection-editor
 linux-headers
@@ -29,6 +29,7 @@ pipewire
 pulseaudio
 pyenv
 python-poetry
+uv
 rofi-wayland
 swaync
 telegram-desktop
