@@ -15,7 +15,7 @@ bind -x $'"\C-g":clear;'
 eval "$(fzf --bash)"
 alias tmux='tmux new -As0'
 export EDITOR=helix
-
+alias hxsu='sudo $(which helix) -c $HOME/.config/helix/config.toml'
 alias p381='ssh -f -N 10.10.1.112 -L 5000:localhost:5000 -L 8502:localhost:8502 &'
 alias c381='ssh -f 10.10.1.112 -X -Y xfce4-terminal --color-bg=#1d2021 --hide-toolbar --hide-scrollbar --hide-menubar --command bash'
 alias c799='ssh -f spbhws799u -X -Y xfce4-terminal --color-bg=#1d2021 --hide-toolbar --hide-scrollbar --hide-menubar --command bash'
